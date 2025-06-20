@@ -39,7 +39,7 @@ function Weather(){
             <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" required placeholder="Enter city name" />
             <button onClick={()=>SetFetchData(true)}>Search</button>
         </div>  
-        {loader && <p style={{textAlign:"center"}}>Loading data ...</p>}
+        {loader && <p style={{textAlign:"center"}}>Loading data...</p>}
         {weatherdata && <div className="weather-cards">
             <div className="weather-card">
                 <h4>Temperature</h4>
